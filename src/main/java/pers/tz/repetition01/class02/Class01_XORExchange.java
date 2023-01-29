@@ -3,7 +3,7 @@ package pers.tz.repetition01.class02;
 /**
  * <h3>title：不使用额外变量交换两个数的位置</h3>
  * <h3>特点：</h3>
- * <p></p>
+ * <p>异或 = 不进位相加</p>
  * <h3 style='margin-top: 10px;'>思路：</h3>
  * <p></p>
  * <p>...</p>
