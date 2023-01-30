@@ -17,7 +17,7 @@ import static pers.tz.util.CommonPrintUtil.printArray;
  * @author irony
  * @date 2023-01-29
  */
-public class Class03_insertionSort {
+public class Class03_InsertionSort {
     public static void insertionSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;

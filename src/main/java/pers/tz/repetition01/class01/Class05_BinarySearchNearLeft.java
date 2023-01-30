@@ -6,9 +6,9 @@ import pers.tz.util.CommonPrintUtil;
 /**
  * <h3>title：找出大于num的最左位置</h3>
  * <h3>特点：</h3>
- * <span></span>
+ * <span>数组是有序的</span>
  * <h3 style='margin-top: 10px;'>思路：</h3>
- * <p></p>
+ * <p>同样用二分查找，但是边界条件特殊</p>
  * <p>...</p>
  * <p></p>
  *
