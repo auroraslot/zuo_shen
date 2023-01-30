@@ -1,6 +1,8 @@
 package pers.tz.repetition01.class03;
 
-import pers.tz.util.Node;
+import pers.tz.common.Node;
+import pers.tz.util.CommonInitUtil;
+import pers.tz.util.CommonPrintUtil;
 
 /**
  * <h3>title：单链表反转</h3>
@@ -25,8 +27,28 @@ public class Class01_ReverseSingleList {
         // 记录下一个
         Node next = null;
 
+        while (head != null) {
+            // 记录下一个
+            next = head.next;
 
-        return null;
+            // 逆转指针
+            head.next = pre;
+
+            // 移动指针
+            pre = head;
+            head = next;
+        }
+
+        return pre;
+    }
+
+    public static void main(String[] args) {
+        Node node = CommonInitUtil.generateRandomLinkedList(10, 100);
+        CommonPrintUtil.printLinked(node);
+
+        node = reverseSingleList(node);
+
+        CommonPrintUtil.printLinked(node);
     }
 
 }

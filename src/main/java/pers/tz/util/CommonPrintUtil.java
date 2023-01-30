@@ -1,5 +1,7 @@
 package pers.tz.util;
 
+import pers.tz.common.Node;
+
 /**
  * <p>公共打印方法</p>
  *
@@ -7,6 +9,8 @@ package pers.tz.util;
  * @date 2023-01-29
  */
 public class CommonPrintUtil {
+
+    /* 数组 start */
     public static void printArray(int[] arr) {
         for (int i : arr) {
             System.out.print(i + "\t");
@@ -25,4 +29,19 @@ public class CommonPrintUtil {
         printArray(arr);
         printIndex(arr);
     }
+    /* 数组 end */
+
+    /* 链表 start */
+    public static void printLinked(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        while (node != null) {
+            System.out.print(node.value + "\t");
+            node = node.next;
+        }
+        System.out.println();
+    }
+    /* 链表 end */
 }

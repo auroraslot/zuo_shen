@@ -1,5 +1,7 @@
 package pers.tz.util;
 
+import pers.tz.common.Node;
+
 import java.util.Random;
 
 /**
@@ -10,11 +12,7 @@ import java.util.Random;
  */
 public class CommonInitUtil {
 
-    /**
-     * 初始化随机数组
-     *
-     * @return
-     */
+    /* 数组 start */
     public static int[] initArray() {
         return initArray(10);
     }
@@ -55,4 +53,26 @@ public class CommonInitUtil {
         arr[j] = arr[i] ^ arr[j];
         arr[i] = arr[i] ^ arr[j];
     }
+    /* 数组 end */
+
+
+
+    /* 链表 start */
+    public static Node generateRandomLinkedList(int len, int value) {
+        int size = (int) (Math.random() * (len + 1));
+        if (size == 0) {
+            return null;
+        }
+        size--;
+        Node head = new Node((int) (Math.random() * (value + 1)));
+        Node pre = head;
+        while (size != 0) {
+            Node cur = new Node((int) (Math.random() * (value + 1)));
+            pre.next = cur;
+            pre = cur;
+            size--;
+        }
+        return head;
+    }
+    /* 链表 end */
 }

@@ -1,4 +1,4 @@
-package pers.tz.util;
+package pers.tz.common;
 
 /**
  * @author irony
@@ -10,4 +10,7 @@ public class Node {
     public Node head;
     public Node next;
 
+    public Node(int value) {
+        this.value = value;
+    }
 }
