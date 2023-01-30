@@ -1,5 +1,6 @@
 package pers.tz.util;
 
+import pers.tz.common.DoubleNode;
 import pers.tz.common.Node;
 
 import java.util.Random;
@@ -69,6 +70,24 @@ public class CommonInitUtil {
         while (size != 0) {
             Node cur = new Node((int) (Math.random() * (value + 1)));
             pre.next = cur;
+            pre = cur;
+            size--;
+        }
+        return head;
+    }
+
+    public static DoubleNode generateRandomDoubleList(int len, int value) {
+        int size = (int) (Math.random() * (len + 1));
+        if (size == 0) {
+            return null;
+        }
+        size--;
+        DoubleNode head = new DoubleNode((int) (Math.random() * (value + 1)));
+        DoubleNode pre = head;
+        while (size != 0) {
+            DoubleNode cur = new DoubleNode((int) (Math.random() * (value + 1)));
+            pre.next = cur;
+            cur.last = pre;
             pre = cur;
             size--;
         }

@@ -1,5 +1,6 @@
 package pers.tz.util;
 
+import pers.tz.common.DoubleNode;
 import pers.tz.common.Node;
 
 /**
@@ -33,6 +34,18 @@ public class CommonPrintUtil {
 
     /* 链表 start */
     public static void printLinked(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        while (node != null) {
+            System.out.print(node.value + "\t");
+            node = node.next;
+        }
+        System.out.println();
+    }
+
+    public static void printLinked(DoubleNode node) {
         if (node == null) {
             return;
         }
