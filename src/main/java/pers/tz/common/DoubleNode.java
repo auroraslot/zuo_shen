@@ -6,8 +6,6 @@ package pers.tz.common;
  */
 public class DoubleNode {
     public int value;
-    public DoubleNode head;
-    public DoubleNode tail;
     public DoubleNode last;
     public DoubleNode next;
 

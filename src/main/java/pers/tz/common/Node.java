@@ -7,7 +7,6 @@ package pers.tz.common;
 public class Node {
 
     public int value;
-    public Node head;
     public Node next;
 
     public Node(int value) {

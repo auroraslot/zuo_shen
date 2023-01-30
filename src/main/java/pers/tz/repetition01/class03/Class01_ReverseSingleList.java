@@ -5,7 +5,7 @@ import pers.tz.util.CommonInitUtil;
 import pers.tz.util.CommonPrintUtil;
 
 /**
- * <h3>title：单链表反转</h3>
+ * <h3>title：单链表反转，并返回头结点</h3>
  * <h3 style='margin-top: 10px;'>要求：</h3>
  * <p>不使用数组空间</p>
  * <h3 style='margin-top: 10px;'>思路：</h3>
@@ -22,9 +22,9 @@ import pers.tz.util.CommonPrintUtil;
 public class Class01_ReverseSingleList {
 
     public static Node reverseSingleList(Node head) {
-        // 记录上一个
+        // 记录上一个节点
         Node pre = null;
-        // 记录下一个
+        // 记录下一个节点
         Node next = null;
 
         while (head != null) {
